@@ -112,6 +112,7 @@ public class Main {
                 Thread.sleep(30_000);
                 processReadyMessages();
                 readyMessages.forEach(m -> {
+                    System.out.println("Message: " + m);
                     if (m.contains("BankTochka:")) {
                         System.out.println("Code: " + m.split(" ")[4]);
                     }
